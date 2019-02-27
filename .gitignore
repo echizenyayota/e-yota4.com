@@ -1,0 +1,9 @@
+.DS_Store
+wp-config.php
+*.sql
+*.log
+.htaccess
+robots.txt
+wp-content/cache/
+wp-content/uploads/
+
