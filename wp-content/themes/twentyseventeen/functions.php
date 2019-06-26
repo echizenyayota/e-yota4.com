@@ -662,3 +662,14 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+// ページによってCSSやJavaScriptの読み込みを制御
+function performance_dequeue_scripts() {
+	if ( is_home() || is_archive() ) {
+		wp_dequeue_style( 'wp-block-library' );
+		wp_dequeue_script( 'jquery' );
+	}
+	if ( ! is_admin() ) {
+		add_action( 'wp_enqueue_scripts', 'performance_dequeue_scripts', 99 );
+	}
+}
