@@ -669,7 +669,7 @@ function performance_dequeue_scripts() {
 		wp_dequeue_style( 'wp-block-library' );
 		wp_dequeue_script( 'jquery' );
 	}
-	if ( ! is_admin() ) {
-		add_action( 'wp_enqueue_scripts', 'performance_dequeue_scripts', 99 );
-	}
+}
+if ( ! is_admin() ) {
+	add_action( 'wp_enqueue_scripts', 'performance_dequeue_scripts', 99 );
 }
