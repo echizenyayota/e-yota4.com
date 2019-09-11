@@ -674,7 +674,8 @@ if ( ! is_admin() ) {
 	add_action( 'wp_enqueue_scripts', 'performance_dequeue_scripts', 99 );
 }
 
+// PWA
 add_filter( 'web_app_manifest', function( $manifest ) {
-	$manifest['short_name'] = 'Short Name';
+	$manifest['short_name'] = 'エコテキブログ4';
 	return $manifest;
 } );
