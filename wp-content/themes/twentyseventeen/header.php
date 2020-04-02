@@ -8,7 +8,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Seventeen
- * @since 1.0
+ * @since Twenty Seventeen 1.0
  * @version 1.0
  */
 
@@ -17,15 +17,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="エコテキブログ4">
-
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-72x72.png" sizes="72x72">
-<link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-114x114.png" sizes="114x114">
-<link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-120x120.png" sizes="120x120">
-<link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-144x144.png" sizes="144x144">
 
 <?php wp_head(); ?>
 </head>
