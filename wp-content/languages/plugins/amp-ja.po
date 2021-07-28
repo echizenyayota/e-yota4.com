@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - AMP - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-07-09 05:34:22+0000\n"
+"PO-Revision-Date: 2021-07-09 06:50:34+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -174,11 +174,17 @@ msgstr "<a href=\"%1$s\" target=\"_blank\">AMP</a> はデスクトップにも�
 msgid "The error details appear below."
 msgstr "エラー詳細が下に表示されます。"
 
+#. translators: %s is total count of validation errors
+#: includes/validation/class-amp-validation-manager.php:1674
+msgid "%s issue:"
+msgid_plural "%s issues:"
+msgstr[0] "問題%s件:"
+
 #. translators: %s the total count of unreviewed validation errors
 #: includes/validation/class-amp-validation-manager.php:1652
 msgid "%s kept"
 msgid_plural "%s kept"
-msgstr[0] "%s件保持"
+msgstr[0] "%s件未レビュー"
 
 #. translators: %s the total count of unreviewed validation errors
 #: includes/validation/class-amp-validation-manager.php:1630
@@ -207,6 +213,12 @@ msgstr "指定されたレイアウト %1$s はタグ %2$s でサポートされ
 #: includes/validation/class-amp-validation-error-taxonomy.php:3331
 msgid "The implied layout %1$s is not supported by tag %2$s."
 msgstr "暗黙のレイアウト %1$s はタグ %2$s でサポートされていません。"
+
+#. translators: %s is number of errors accepted
+#: includes/validation/class-amp-validation-error-taxonomy.php:1569
+msgid "Deleted %s instance of validation errors."
+msgid_plural "Deleted %s instances of validation errors."
+msgstr[0] "検証エラーの %s インスタンスを削除しました。"
 
 #: includes/validation/class-amp-validation-error-taxonomy.php:1420
 msgctxt "terms"
@@ -266,6 +278,10 @@ msgstr "この検証エラーのある検証済み URL はありません。削�
 msgctxt "CSS usage not available"
 msgid "n/a"
 msgstr "該当なし"
+
+#: includes/validation/class-amp-validated-url-post-type.php:1247
+msgid "Confirm that the action being taken on the invalid markup (causing a validation error) has been seen and approved."
+msgstr "無効なマークアップで行われた操作 (検証エラーの原因となる) が表示され承認されたことを確認します。"
 
 #: includes/validation/class-amp-validated-url-post-type.php:1242
 #: includes/validation/class-amp-validated-url-post-type.php:1246
@@ -352,6 +368,10 @@ msgstr "このリンクはこのコンテキストには適用できません。
 msgid "Go to mobile version"
 msgstr "モバイルバージョンに移動"
 
+#: src/MobileRedirection.php:558
+msgid "Exit mobile version"
+msgstr "モバイルバージョンを終了"
+
 #: includes/options/class-amp-reader-theme-rest-controller.php:67
 #: src/OptionsRESTController.php:153
 msgid "Sorry, you are not allowed to manage options for the AMP plugin for WordPress."
@@ -365,6 +385,10 @@ msgstr "現在のユーザーには、この変更を行う権限がありませ
 msgid "This presumes you have some experience coding with HTML, CSS, JS, and PHP."
 msgstr "HTML、CSS、JS、PHP での﻿コーディング経験﻿があることを前提としています。"
 
+#: src/DevTools/UserAccess.php:143
+msgid "Enable AMP developer tools to surface validation errors when editing posts and viewing the site."
+msgstr "AMP 開発者ツールを有効にして、投稿の編集やサイトの表示の際に検証エラーを表示できるようにします。"
+
 #: src/DevTools/UserAccess.php:139
 msgid "AMP Developer Tools"
 msgstr "AMP 開発者ツール"
@@ -376,6 +400,16 @@ msgstr "ユーザーが開発者ツールを有効にしたかどうか。"
 #: src/Admin/PluginActivationNotice.php:81
 msgid "Open the onboarding wizard"
 msgstr "onborading ウィザード﻿を開く"
+
+#: src/Admin/PluginActivationNotice.php:79
+msgid "Bring the speed and capabilities of the AMP web framework to your site; support content authoring and website development with the effective tools the AMP plugin provides."
+msgstr "サイトで AMP Web フレームワークの速度と機能を活用できます。AMP プラグインに備わっている効果的なツールで、コンテンツ作成とサイト開発をサポートします。"
+
+#: src/Admin/OnboardingWizardSubmenu.php:44
+#: src/Admin/OnboardingWizardSubmenu.php:45
+#: src/Admin/OnboardingWizardSubmenuPage.php:117
+msgid "AMP Onboarding Wizard"
+msgstr "AMP Onboarding ウィザード"
 
 #: src/Admin/ReaderThemes.php:470
 msgid "The original templates included in the plugin with limited customization options."
@@ -400,6 +434,10 @@ msgstr "Transient キャッシュを再有効化"
 #: src/Admin/PairedBrowsing.php:118 src/Admin/PairedBrowsing.php:226
 msgid "Paired Browsing"
 msgstr "ペアモードブラウジング"
+
+#: src/Admin/SiteHealth.php:525
+msgid "Calculated time series for monitoring the stylesheet caching"
+msgstr "スタイルシートキャッシュのモニタリング用に計算された時系列"
 
 #: includes/validation/class-amp-validation-error-taxonomy.php:3434
 msgid "Message"
@@ -621,6 +659,10 @@ msgstr "すべてのテンプレートを AMP として提供しますか ? "
 msgid "Templates enabled"
 msgstr "テンプレートが有効になりました"
 
+#: src/Admin/SiteHealth.php:472
+msgid "Debugging information for the Official AMP Plugin for WordPress."
+msgstr "WordPress 用の公式 AMP プラグインの情報をデバッグしています。"
+
 #: src/Admin/SiteHealth.php:445
 msgid "Your server currently does not have the Xdebug PHP extension loaded"
 msgstr "お使いのサーバーには現在、Xdebug PHP 拡張機能が読み込まれていません"
@@ -787,6 +829,11 @@ msgstr "無効なスクリプト"
 msgid "%s byte"
 msgid_plural "%s bytes"
 msgstr[0] "%sバイト"
+
+#. translators: %s: amp_supportable_templates
+#: includes/class-amp-theme-support.php:539
+msgid "An expected parent was not found. Did you filter %s to not honor the template hierarchy?"
+msgstr "想定される親が見つかりませんでした。 テンプレート階層を優先しない条件で %s を絞り込みましたか ?"
 
 #: includes/validation/class-amp-validation-error-taxonomy.php:3385
 msgid "Text content"
@@ -959,6 +1006,10 @@ msgstr "マークアップのステータスでフィルターする"
 #: includes/validation/class-amp-validated-url-post-type.php:2943
 msgid "AMP Validated URL"
 msgstr "AMP 検証済み URL"
+
+#: includes/validation/class-amp-validated-url-post-type.php:2188
+msgid "AMP is enabled because no invalid markup is being kept."
+msgstr "無効なマークアップが保持されていないため AMP は有効になっています。"
 
 #: includes/validation/class-amp-validated-url-post-type.php:2796
 msgid "Keep"
