@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Plugins - AMP - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-04-05 20:21:25+0000\n"
+"PO-Revision-Date: 2022-04-16 21:31:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/3.0.0-rc.3\n"
+"X-Generator: GlotPress/3.0.0\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - AMP - Stable (latest release)\n"
 
@@ -2171,7 +2171,7 @@ msgstr "アナリティクス"
 #. translators: %s is sanitizer class
 #: includes/templates/class-amp-content-sanitizer.php:83
 msgid "Sanitizer (%s) class does not exist"
-msgstr "サニタイザ (%s) クラスが存在しません。"
+msgstr "サニタイザ (%s) クラスが存在しません"
 
 #. translators: %s: list of tags.
 #: templates/meta-taxonomy.php:44
